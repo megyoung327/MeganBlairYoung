@@ -1,0 +1,171 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,400italic,600,600italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,400italic,500,600,700);
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+/*#container {
+  width: 1000px;
+  margin: auto;
+}*/
+
+body {
+  font-family: "Raleway", helvetica; 
+  color: #00000;
+}
+
+nav {
+  margin: auto;
+  padding: 10px;
+  color: inherit;
+}
+
+h1 {
+  font-size: 65px;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 5px;
+  margin: -5px;
+  color: inherit;
+ }
+
+ h3 {
+  font-size: 30px;
+ }
+
+ header {
+  text-align: center;
+  min-height: 300px;
+  background-color: #fcf0c9;
+ }
+
+ .resume_image, 
+ .feature_image {
+    float: left;
+    margin-left: -100px;
+    margin-right: -100px;
+ }
+
+
+/*.feature_image {
+  float: left;
+  height: 250px;
+  width: 250px;
+}
+
+.resume_image {
+  float: left;
+  height: 200px;
+  width: 200px;
+}*/
+
+/*Added to get rid of the default blue color and underline style.*/
+a {
+    text-decoration: none !important;
+}
+
+footer {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 25px;
+  background-color: #fcd7c9;
+  width: 100%;
+  min-height: 200px;
+  text-align: center;
+}
+
+
+footer h2 {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+
+}
+
+li {
+  font-size: 25px;
+  font-style: 500;
+  padding: 15px;
+  float: left;
+}
+
+a {
+  color: black;
+}
+
+
+/*Hover effects*/
+
+.social_icon:hover {
+  cursor: pointer;
+}
+
+.demo:hover #content,
+.demo_second:hover #content_second,
+.demo_third:hover #content_third {
+  display: block;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: #c9d5fc;
+  cursor: pointer;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+/*Special formatting for Resources Page*/
+
+#resources-list li:hover a  {
+  color: white;
+  cursor: pointer;
+}
+
+#resources-list li {
+  float: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+/*Responsive design formatting.*/
+
+@media screen and (max-width: 768px) {
+
+
+ .feature-images {
+    width: 100%;
+  }
+
+   nav ul {
+    display: none;
+  }
+
+ .hamburger {
+      display: block;
+      float: right;
+  }
+
+  .demo,
+  .demo_second,
+  .demo_third {
+    margin-left: 10px;
+  }
+
+  
+
+
