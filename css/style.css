@@ -24,11 +24,13 @@ body {
   color: #00000;
 }
 
-nav {
-  margin: auto;
-  padding: 10px;
-  color: inherit;
+nav div {
+  float: right;
+  margin-right: 30px;
+  padding: 8px;
+  font-style: 700,
 }
+
 
 h1 {
   font-size: 65px;
@@ -48,13 +50,40 @@ h1 {
   background-color: #fcf0c9;
  }
 
- .resume_image, 
- .feature_image {
-    float: left;
-    margin-left: -100px;
-    margin-right: -100px;
- }
 
+h4 {
+  padding: 25px;
+}
+
+main {
+  background-color: #fde9e1;
+  min-height: 400px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 8px;
+   margin-top: 10px;
+   border: solid;
+   border-width: .3px;
+   border-radius: 6px;
+   background-color: #f1f1f1;
+   font-family: "Raleway", sans-serif;
+   font-size: 25px;
+  font-weight: bold;
+}
+
+
+.profile_image {
+  background-image: url("../images/megan_young_small.jpg");
+  width: 400px;
+  height: 400px;
+  float: left;
+  background-size: cover;
+  border-style: solid;
+  border-color: white;
+  border-width: 7px;
+}
 
 /*.feature_image {
   float: left;
@@ -73,12 +102,62 @@ a {
     text-decoration: none !important;
 }
 
+.demo,
+.demo_second,
+.demo_third {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  padding: 50px;
+  margin-right: 10px;
+  background-size: cover;
+  border-style: solid;
+  border-color: white;
+  border-width: 7px;
+  float: left;
+}
+
+.demo {
+  background-image: url("../images/roofgarden_small.jpg");
+}
+
+.demo_second {
+  background-image: url("../images/sailing_small.jpg");
+}
+
+.demo_third {
+  background-image: url("../images/beach.jpg");
+}
+
+#content,
+#content_second,
+#content_third {
+  display: none;
+  position: absolute;
+  padding: 20px;
+  width: 400px;
+  height: 400px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.5);
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+ }
+
+ .demo:hover #content,
+.demo_second:hover #content_second,
+.demo_third:hover #content_third {
+  display: block;
+}
+
 footer {
   font-family: "Josefin Sans", sans-serif;
   font-size: 25px;
   background-color: #fcd7c9;
   width: 100%;
-  min-height: 200px;
+  min-height: 150px;
   text-align: center;
 }
 
@@ -102,16 +181,11 @@ a {
 }
 
 
+
 /*Hover effects*/
 
 .social_icon:hover {
   cursor: pointer;
-}
-
-.demo:hover #content,
-.demo_second:hover #content_second,
-.demo_third:hover #content_third {
-  display: block;
 }
 
 a:visited {
@@ -119,7 +193,7 @@ a:visited {
 }
 
 a:hover {
-  color: #c9d5fc;
+  color: #d7c9fc;
   cursor: pointer;
 }
 
@@ -127,20 +201,6 @@ select:hover {
   cursor: pointer;
 }
 
-/*Special formatting for Resources Page*/
-
-#resources-list li:hover a  {
-  color: white;
-  cursor: pointer;
-}
-
-#resources-list li {
-  float: none;
-}
-
-.hamburger {
-  display: none;
-}
 
 /*Responsive design formatting.*/
 
